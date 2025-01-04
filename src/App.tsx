@@ -8,7 +8,7 @@ import Services from '@components/sections/services'
 import Projects from '@components/sections/projects'
 import Testimonials from '@components/sections/testimonials'
 import Features from '@components/sections/features'
-import Pricing from '@components/sections/pricing'
+// import Pricing from '@components/sections/pricing'
 import Faqs from '@components/sections/faqs'
 import Booking from '@components/sections/booking'
 import Footer from '@components/sections/footer'
@@ -30,7 +30,6 @@ const App = () => {
         <Projects />
         <Testimonials />
         <Features />
-        <Pricing />
         <Faqs />
         <Booking />
       </main>

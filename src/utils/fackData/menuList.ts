@@ -20,11 +20,11 @@ export const menuList:DataType = [
         label:"Projects",
         path:"project"
     },
-    {
-        id:4,
-        label:"Pricing",
-        path:"pricing"
-    },
+    // {
+    //     id:4,
+    //     label:"Pricing",
+    //     path:"pricing"
+    // },
     {
         id:5,
         label:"Faqs",
