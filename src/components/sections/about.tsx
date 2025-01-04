@@ -13,7 +13,7 @@ const About = () => {
                             <div className="founder-name-part">
 								<img src="/images/about/founder-jarjis.png" className="img-fluid rounded-circle" alt="founder" title="founder" />
                                 <h2>Mehedi Hasan Jarjis</h2>
-                                <p>Co-Founder of Oyelab</p>
+                                <p>Co-Founder, Oyelab</p>
                             </div>
                         </SlideUp>
                     </div>
