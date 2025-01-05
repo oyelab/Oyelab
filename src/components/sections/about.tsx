@@ -7,9 +7,9 @@ const About = () => {
                 <div className="row">
                     <div className="col-lg-12">
                         <SlideUp className="founder-say-part text-center">
-                            <h3>Oyelab took my billion-dollar baby idea, slapped their design magic on it, and boom
-                                –<span>branding so good it makes my other ventures look like lemonade stands.</span>Twist
-                                isn't just a design agency; they're your ticket to the big leagues.</h3>
+                            <h3>Building a future where boundaries are non-existent—where we don't just meet expectations, we shatter them. At Oyelab–
+								<span>we're not just creating technology, We're creating the fabric of tomorrow. </span> 
+								Join us in reimagining what's possible.</h3>
                             <div className="founder-name-part">
 								<img src="/images/about/founder-jarjis.png" className="img-fluid rounded-circle" alt="founder" title="founder" />
                                 <h2>Mehedi Hasan Jarjis</h2>

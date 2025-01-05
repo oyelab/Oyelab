@@ -39,7 +39,7 @@ interface PropsType {
 }
 const Card = ({ id, title, description, img }: PropsType) => {
     return (
-        <div className="col-lg-4 col-md-6">
+        <div className="col-lg-4 col-md-6 mb-4">
             <SlideUp delay={id} className="info-item">
                 <div className="info-content">
                     <h4>{title}</h4>

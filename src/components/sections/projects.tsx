@@ -19,8 +19,8 @@ const Projects = () => {
                 <PhotoProvider>
                     <div className="row g-4 portfolio-grid">
                         {
-                            portfolioData.map(({ category, id, img, title }) =>
-                                <Card key={id} category={category} img={img} title={title} />
+                            portfolioData.map(({ category, id, img, title, url }) =>
+                                <Card key={id} category={category} img={img} title={title} url={url} />
                             )
                         }
                     </div>
@@ -30,29 +30,36 @@ const Projects = () => {
                 </div>
             </div>
         </div>
-
     )
 }
+
 
 export default Projects
 
 interface PropsType {
     img: string,
     title: string,
-    category: string
+    category: string,
+    url: string
 }
-const Card = ({ img, title, category }: PropsType) => {
+
+const Card = ({ img, title, category, url }: PropsType) => {
     return (
         <div className="col-md-6 col-xl-6 portfolio-item category-2">
-            <PhotoView src={img}>
-                <div className="portfolio-box work-popup">
+            <div className="portfolio-box work-popup">
+                {/* Only wrap the image with PhotoView for lightbox */}
+                <PhotoView src={img}>
                     <img src={img} alt="img" data-rjs={2} />
-                    <span className="portfolio-category">{category}</span>
-                    <div className="portfolio-caption">
-                        <h1>{title}</h1>
-                    </div>
+                </PhotoView>
+                <span className="portfolio-category">{category}</span>
+                <div className="portfolio-caption">
+                    <h1>{title}</h1>
+                    {/* Visit button is now separated from image click */}
+                    <a href={url} target="_blank" rel="noopener noreferrer" className="visit-btn">
+                        Visit
+                    </a>
                 </div>
-            </PhotoView>
+            </div>
         </div>
     )
 }

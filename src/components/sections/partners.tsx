@@ -10,9 +10,13 @@ const Partners = () => {
                         <h2>Top companies trust us with their design</h2>
                         <div className="company-list">
                             <div className="scroller">
-                                <Marquee>
+								<Marquee>
                                     {
-                                        clientLogoData.map(({ id, img }) => <img key={id} src={img} alt="company logo" />)
+                                        clientLogoData.map(({ id, img, url }) => (
+                                            <a key={id} href={url} target="_blank" rel="noopener noreferrer">
+                                                <img src={img} alt="company logo" />
+                                            </a>
+                                        ))
                                     }
                                 </Marquee>
                             </div>
