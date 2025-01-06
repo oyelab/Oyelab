@@ -16,7 +16,8 @@ const Faqs = () => {
                 </div>
                 <div className="row">
                     <div className="col-lg-4 col-md-6">
-                        <div className="book-call-intro text-center"><img src="/images/about/founder.png" alt="founder" title="founder" />
+                        <div className="book-call-intro text-center">
+							<img src="/images/about/founder.png" className="img-fluid rounded" alt="founder" title="founder" />
                             <h2>Book a 15-minute intro call</h2>
                             <a href="#" className="theme-btn">Schedule now<i className="ri-video-chat-line" /></a>
                             <p>Prefer to email? <a href="mailto:hello@oyelab.com">hello@oyelab.com</a></p>
