@@ -2,7 +2,7 @@ export const portfolioData = [
 	{
 		id: 1,
 		title: 'Wings Sportswear',
-		img: '/images/projects/work7.jpg',
+		img: '/images/projects/work7.jpeg',
 		category: 'eCommerce',
 		url: 'https://wingssportswear.shop',
 	},
