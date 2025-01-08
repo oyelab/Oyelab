@@ -19,11 +19,11 @@ export const clientLogoData: DataType = [
 		img: '/images/company-logo/company3.svg',
 		url: '#',
 	},
-	{
-		id: 4,
-		img: '/images/company-logo/company4.svg',
-		url: 'https://herostories.oyelab.com',
-	},
+	// {
+	// 	id: 4,
+	// 	img: '/images/company-logo/company4.svg',
+	// 	url: 'https://herostories.oyelab.com',
+	// },
 	{
 		id: 5,
 		img: '/images/company-logo/company5.svg',
