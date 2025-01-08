@@ -9,23 +9,23 @@ type DataType = {
 export const workProcessData: DataType = [
     {
         id: 1,
-        title: "Subscribe",
+        title: "Uncover the Vision",
         img: "/images/shapes/workprocess-shape1.png",
         icon: "ri-shake-hands-line",
-        description: "Select your plan that fits your needs, get access to Trello board within 24 hours, and start listing your requests.",
+        description: "We listen, understand, and dream with you. Every great project begins with a story. We start by diving deep into your goals, uncovering the essence of what you want to achieve. Through collaboration, we craft a strategy tailored to your vision and future growth.",
     },
     {
         id: 2,
-        title: "Receive",
+        title: "Craft the Experience",
         img: "/images/shapes/workprocess-shape2.png",
-        icon: "ri-global-fill",
-        description: "Nidia Dias is a 3D designer based in the Portugal with an incredible portfolio. From the professional work done with...",
+        icon: "ri-stack-line",
+        description: "With your vision in hand, our creative team transforms it into an intuitive experience. Our designers craft stunning visuals while our developers build the structure, ensuring your platform isn’t just functional, but a seamless journey for users.",
     },
     {
         id: 3,
-        title: "Continue",
+        title: "Launch & Elevate",
         img: "/images/shapes/workprocess-shape1.png",
-        icon: "ri-stack-line",
-        description: "Anta Petrenco shared a beautiful visual identity, branding and packaging design project on their Behance profile...",
+        icon: "ri-global-fill",
+        description: "Now the world sees what we've built together. We don’t stop at launch. With performance monitoring and continuous optimization, we ensure your platform thrives in the real world — fast, secure, and ready to scale with your success.",
     },
 ]

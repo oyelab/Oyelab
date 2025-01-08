@@ -7,15 +7,14 @@ const Booking = () => {
                 <div className="row">
                     <div className="col-lg-12">
                         <SlideUp className="call-to-action-part text-center">
-                            <h2>See if Oyelab is right for you. (It totally is.)</h2>
-                            <p>Get a guided tour through Oyelab, and find out how you and your team can change the way
-                                you source design, forever.</p>
+							<a href="#">
+                                <img src="/images/logos/logo-dark.svg" alt="Logo" title="Logo" />
+                            </a>
+                            <h2>Let’s Build the Future Together</h2>
+                            <p>Take the first step towards transforming your business. Book a free consultation call with our experts today and discover how we can bring your vision to life with precision, performance, and impact.</p>
                             <div className="hero-btns">
                                 <a href="#" className="theme-btn">Book a free call</a>
                             </div>
-                            <a href="#">
-                                <img src="/images/logos/logo-dark.svg" alt="Logo" title="Logo" />
-                            </a>
                         </SlideUp>
                     </div>
                 </div>

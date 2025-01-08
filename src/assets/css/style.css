@@ -30,15 +30,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Manrope:wght@200..800&display=swap');
 
 :root {
-    --main-color: #101010;
+    --main-color: #7722E7;
     --heading-color: #000000;
-    --primary-color: #ff4f01;
+    --primary-color: #DA25C8;
     --lighter-color: #1F1F1F;
     --subtitle-color: rgb(119, 119, 125);
     --black-color: #070707;
-    --border-color: #ff4f01;
-    --button-border: #ff4f01;
-    --body-background: #f3e9f2;
+    --border-color: #DA25C8;
+    --button-border: #DA25C8;
+    --body-background: #FAF7F2;
     --white-color: #fff;
 }
 
@@ -1174,7 +1174,7 @@ nav.main-menu {
 .hero-content .dot-shape2 {
     position: absolute;
     left: -30%;
-    top: 10%;
+    top: 30%;
 }
 
 .hero-content .dot-shape2 img {
@@ -1947,7 +1947,7 @@ ul.extra-skills li i {
     top: 16px;
     right: 16px;
     display: inline-block;
-    background: rgba(255, 79, 1, .5);
+    background: var(--main-color);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     border-radius: 2em;
@@ -2102,12 +2102,19 @@ ul.extra-skills li i {
 }
 
 .testimonial-item .text {
+    min-height: 240px;
     margin-bottom: 30px;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 40px;
     font-style: italic;
     font-family: "Bricolage Grotesque", sans-serif;
+    overflow: hidden; /* Ensures text does not overflow */
+    text-overflow: ellipsis; /* Optional: shows "..." if the text overflows */
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Limits the number of lines */
+    -webkit-box-orient: vertical;
 }
+
 
 .testimonial-item .testi-des h5 {
     margin-bottom: 0;
@@ -2534,7 +2541,7 @@ ul.extra-skills li i {
     font-weight: 500;
 }
 
-.footer-bottom {}
+
 
 .call-to-action-part {
     width: 75%;
@@ -2566,6 +2573,7 @@ ul.extra-skills li i {
 }
 
 .call-to-action-part img {
+	margin-bottom: 30px;
     width: 200px;
 }
 

@@ -9,10 +9,10 @@ const Features = () => {
                 <div className="row">
                     <div className="col-xl-12 col-lg-12">
                         <SectionTitle>
-                            <SectionTitle.Name>Features</SectionTitle.Name>
-                            <SectionTitle.Title>Membership benefits</SectionTitle.Title>
-                            <SectionTitle.Description>Perks so good you'll never need to go anywhere else for your design. Seriously.</SectionTitle.Description>
-                        </SectionTitle>
+                            <SectionTitle.Name>Technologies</SectionTitle.Name>
+                            <SectionTitle.Title>Build a Stronger Future</SectionTitle.Title>
+							<SectionTitle.Description>Harness the power of advanced technologies to unlock growth, optimize performance, and shape the future of your business.</SectionTitle.Description>
+						</SectionTitle>
                     </div>
                 </div>
                 <div className="row">

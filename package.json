@@ -18,6 +18,7 @@
     "react-photo-view": "^1.2.6",
     "react-router-dom": "^6.28.0",
     "react-scroll": "^1.9.0",
+    "remixicon": "^4.6.0",
     "swiper": "^11.1.14"
   },
   "devDependencies": {

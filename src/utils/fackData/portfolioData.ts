@@ -22,7 +22,7 @@ export const portfolioData = [
 	},
 	{
 		id: 4,
-		title: 'DUAA - eCommerce Application',
+		title: 'DUAA',
 		img: '/images/projects/work5.jpg',
 		category: 'Invoice/Inventory',
 		url: 'https://duaa.com.bd',
