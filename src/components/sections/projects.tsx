@@ -46,10 +46,10 @@ interface PropsType {
 const Card = ({ img, title, category, url }: PropsType) => {
     return (
         <div className="col-md-6 col-xl-6 portfolio-item category-2">
-            <div className="portfolio-box work-popup">
+            <div className="portfolio-box work-popup shadow-lg rounded">
                 {/* Only wrap the image with PhotoView for lightbox */}
                 <PhotoView src={img}>
-                    <img src={img} alt="img" data-rjs={2} />
+                    <img src={img} alt="img" data-rjs={2} className="img-fluid" />
                 </PhotoView>
                 <span className="portfolio-category">{category}</span>
                 <div className="portfolio-caption">

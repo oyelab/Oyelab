@@ -1,11 +1,26 @@
 import { Link } from 'react-scroll';
 import SlideUp from "@utils/animations/slideUp"
+import { socialMediaData } from "../../utils/fackData/socialMediaData"; // Adjust the path as needed
+
 
 const Hero = () => {
     return (
         <section id="home" className="main-hero-area">
             <div className="container">
                 <div className="row align-items-center">
+					<div className="d-flex justify-content-center gap-2 fs-4"> {/* Bootstrap Flexbox with gap */}
+						{socialMediaData.map((social) => (
+							<a
+								key={social.id}
+								href={social.url}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="social-icon"
+							>
+								<i className={social.icon}></i>
+							</a>
+						))}
+					</div>
                     <div className="col-lg-12">
                         <SlideUp className="hero-content position-relative">
                             <h3>Elevating Possibilities – Engineering Precision and Performance</h3>

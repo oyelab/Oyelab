@@ -1,8 +1,27 @@
+import { socialMediaData } from "../../utils/fackData/socialMediaData"; // Adjust the path as needed
+
 const Footer = () => {
     return (
         <footer className="main-footer">
-            <div className="footer-bottom pt-50 pb-40">
+            <div className="footer-bottom pt-20 pb-20">
                 <div className="container">
+                    <div className="row justify-content-center mb-2"> {/* Centering icons using Bootstrap */}
+                        <div className="col-auto">
+                            <div className="d-flex justify-content-center gap-2 fs-5"> {/* Bootstrap Flexbox with gap */}
+                                {socialMediaData.map((social) => (
+                                    <a
+                                        key={social.id}
+                                        href={social.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="social-icon"
+                                    >
+                                        <i className={social.icon}></i>
+                                    </a>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
                     <div className="row">
                         <div className="col-lg-4">
                             <div className="copyright-text">
@@ -24,8 +43,7 @@ const Footer = () => {
                 </div>
             </div>
         </footer>
+    );
+};
 
-    )
-}
-
-export default Footer
+export default Footer;
