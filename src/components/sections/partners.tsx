@@ -12,7 +12,7 @@ const Partners = () => {
                             <div className="scroller">
 								<Marquee>
                                     {
-                                        clientLogoData.map(({ id, img, url }) => (
+                                        clientLogoData?.map(({ id, img, url }) => (
                                             <a key={id} href={url} target="_blank" rel="noopener noreferrer">
                                                 <img src={img} alt="company logo" />
                                             </a>
