@@ -1,20 +1,23 @@
-import { servicesData } from '../../utils/fackData/servicesData';
+import { Link } from 'react-scroll';
+import useSlideInEffect from '../../hooks/useSlideInEffect';
 
-const highlightServices = (text: string) => {
-    let highlightedText = text;
-    servicesData.forEach((service) => {
-        const regex = new RegExp(`(${service.title})`, 'gi');
-        highlightedText = highlightedText.replace(regex, '<mark>$1</mark>');
-    });
-    return highlightedText;
+const SuggestionList = ({ suggestions, trigger }: { suggestions: string[], trigger: boolean }) => {
+    const combinedSuggestions = suggestions.join(' ');
+    const { text, style } = useSlideInEffect(combinedSuggestions, trigger);
+
+    const noMatchMessage = 'No matching services or features found. Please try a different prompt.';
+
+    return (
+        <div className="suggestion-item" style={style}>
+            <p>{text}</p>
+            <div className="button-group">
+                {suggestions[0] !== noMatchMessage && (
+                    <Link to="book" smooth={true} duration={500} className="btn btn-primary">Book the Service</Link>
+                )}
+                <Link to="service" smooth={true} duration={500} className="btn btn-secondary">Explore All Services</Link>
+            </div>
+        </div>
+    );
 };
-
-const SuggestionList = ({ suggestions }: { suggestions: string[] }) => (
-    <div className="suggestion-list">
-        {suggestions.map((suggestion, index) => (
-            <div key={index} dangerouslySetInnerHTML={{ __html: highlightServices(suggestion) }} />
-        ))}
-    </div>
-);
 
 export default SuggestionList;

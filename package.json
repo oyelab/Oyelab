@@ -14,6 +14,7 @@
     "bootstrap": "^5.3.3",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^11.11.17",
+    "natural": "^8.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-fast-marquee": "^1.6.5",
@@ -23,6 +24,7 @@
     "react-router-dom": "^6.28.0",
     "react-scroll": "^1.9.0",
     "remixicon": "^4.6.0",
+    "string-similarity": "^4.0.4",
     "swiper": "^11.1.14"
   },
   "devDependencies": {
@@ -33,6 +35,7 @@
     "@types/react-dom": "^18.3.1",
     "@types/react-modal": "^3.16.3",
     "@types/react-scroll": "^1.8.10",
+    "@types/string-similarity": "^4.0.2",
     "@vitejs/plugin-react": "^4.3.3",
     "eslint": "^9.13.0",
     "eslint-plugin-react-hooks": "^5.0.0",

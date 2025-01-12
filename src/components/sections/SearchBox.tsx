@@ -5,11 +5,22 @@ import SuggestionList from './SuggestionList';
 const SearchBox = () => {
     const [input, setInput] = useState('');
     const [suggestions, setSuggestions] = useState<string[]>([]);
+    const [loading, setLoading] = useState(false);
+    const [triggerEffect, setTriggerEffect] = useState(false);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        const result = await getSuggestions(input);
-        setSuggestions(result);
+        setLoading(true);
+        setTriggerEffect(false); // Reset the effect trigger
+        try {
+            const result = await getSuggestions(input);
+            setSuggestions(result);
+            setTriggerEffect(true); // Trigger the effect once the response is received
+        } catch (error) {
+            console.error('Error fetching suggestions:', error);
+        } finally {
+            setLoading(false);
+        }
     };
 
     return (
@@ -30,15 +41,15 @@ const SearchBox = () => {
                         </div>
                         <div className="col-lg-3">
                             <form onSubmit={handleSubmit}>
-                                <button className="btn" type="submit">
-									<i className="ri-sparkling-2-fill" /> Start Building
-                                </button>
+								<button className="btn" type="submit" disabled={loading}>
+									{loading ? 'Loading...' : <><i className="ri-sparkling-2-fill"></i> AI Suggestions</>}
+								</button>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <SuggestionList suggestions={suggestions} />
+            {suggestions.length > 0 && <SuggestionList suggestions={suggestions} trigger={triggerEffect} />}
         </div>
     );
 };
