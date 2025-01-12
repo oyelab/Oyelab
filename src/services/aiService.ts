@@ -35,7 +35,7 @@ export const getSuggestions = async (prompt: string): Promise<string[]> => {
 
     try {
         const response = await axios.post(
-            '/api/suggestions',
+            'http://localhost:5000/api/suggestions',
             { prompt: `${prompt}\n\n${dataPrompt}\n\nPlease provide a concise response of no more than 100 words.` }
         );
         return response.data as string[];
