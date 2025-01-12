@@ -9,7 +9,7 @@ const SuggestionList = ({ suggestions, trigger }: { suggestions: string[], trigg
 
     return (
         <div className="suggestion-item" style={style}>
-            <p>{text}</p>
+            <p className="suggestion-text">{text}</p>
             <div className="button-group">
                 {suggestions[0] !== noMatchMessage && (
                     <Link to="book" smooth={true} duration={500} className="btn btn-primary">Book the Service</Link>
