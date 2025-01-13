@@ -25,17 +25,18 @@ const Header = () => {
                     <div className="header-inner d-flex align-items-center">
                         <div className="logo-outer">
                             <div className="logo">
-                                <a href="#">
-                                    <img src="/images/logos/logo-dark.svg" alt="Logo" title="Logo" />
-                                </a>
+								<a href="/">
+									<img src="/images/logos/logo-dark.svg" alt="Logo" title="Logo" />
+								</a>
                             </div>
                         </div>
                         <div className="nav-outer clearfix">
                             <nav className="main-menu navbar-expand-lg">
                                 <div className="navbar-header">
                                     <div className="mobile-logo">
-                                        <a href="#">
-                                            <img src="/images/logos/logo-dark.svg" alt="Logo" title="Logo" /></a>
+										<a href="/">
+                                            <img src="/images/logos/logo-dark.svg" alt="Logo" title="Logo" />
+										</a>
                                     </div>
                                     <button type="button" className="navbar-toggle" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
                                         <span className="icon-bar" />

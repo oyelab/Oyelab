@@ -7,7 +7,7 @@ const Booking = () => {
                 <div className="row">
                     <div className="col-lg-12">
                         <SlideUp className="call-to-action-part text-center">
-							<a href="#">
+							<a href="/">
                                 <img src="/images/logos/logo-dark.svg" alt="Logo" title="Logo" />
                             </a>
                             <h2>Let’s Build the Future Together</h2>

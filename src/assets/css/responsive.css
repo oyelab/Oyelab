@@ -108,8 +108,7 @@
     }
 
     .main-hero-area {
-        padding-top: 80px;
-        padding-bottom: 50px;
+        padding: 100px 0px;
     }
 
     .company-design-area {
@@ -309,8 +308,7 @@
 	/* AI Prompt Start */
 	.image-generator-box .searchbox .form-control {
 		font-size: 15px;
-		padding-bottom: 20px;
-		height: 50px;
+		padding-bottom: 30px;
 		}
 		.image-generator-box .searchbox .btn {
 		padding: 12px 15px;
@@ -379,8 +377,7 @@
     }
 
     .main-hero-area {
-        padding-top: 80px;
-        padding-bottom: 20px;
+        padding: 100px 0px;
     }
 
     body {
@@ -593,6 +590,16 @@
         padding: 0;
         width: 100%;
     }
+	.hero-content-2 .image-generator-box .searchbox .form-control {
+		font-size: 14px; /* Reduce font size for smaller screens */
+		padding: 8px; /* Adjust padding to fit better */
+	  }
+	
+	  /* Optional: Adjust button size to align with the input field */
+	  .hero-content-2 .image-generator-box .searchbox .btn {
+		font-size: 14px; /* Reduce font size for the button */
+		padding: 8px 12px; /* Adjust padding for better fit */
+	  }
 }
 
 

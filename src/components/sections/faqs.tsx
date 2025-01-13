@@ -1,7 +1,19 @@
-import SectionTitle from "@components/ui/sectionTitle"
-import { faqData } from "@utils/fackData/faqData"
+import { useState } from 'react';
+import SectionTitle from "@components/ui/sectionTitle";
+import { faqData } from "@utils/fackData/faqData";
+import Modal from './Modal';
 
 const Faqs = () => {
+    const [showModal, setShowModal] = useState(false);
+
+    const handleOpenModal = () => {
+        setShowModal(true);
+    };
+
+    const handleCloseModal = () => {
+        setShowModal(false);
+    };
+
     return (
         <section id="faqs" className="any-questions-area section-padding">
             <div className="container">
@@ -17,9 +29,11 @@ const Faqs = () => {
                 <div className="row">
                     <div className="col-lg-4 col-md-6">
                         <div className="book-call-intro text-center">
-							<img src="/images/about/founder.png" className="img-fluid rounded" alt="founder" title="founder" />
+                            <img src="/images/about/founder.png" className="img-fluid rounded" alt="founder" title="founder" />
                             <h2>Book a 15-minute intro call</h2>
-                            <a href="#" className="theme-btn">Schedule now<i className="ri-video-chat-line" /></a>
+                            <button type="button" className="theme-btn" onClick={handleOpenModal}>
+                                Schedule now<i className="ri-video-chat-line" />
+                            </button>
                             <p>Prefer to email? <a href="mailto:hello@oyelab.com">hello@oyelab.com</a></p>
                         </div>
                     </div>
@@ -45,9 +59,13 @@ const Faqs = () => {
                     </div>
                 </div>
             </div>
+
+            <Modal show={showModal} onClose={handleCloseModal} title="Schedule a Call">
+                <p>To schedule a 15-minute intro call, please provide your details and preferred time slot.</p>
+                {/* Add your form or additional content here */}
+            </Modal>
         </section>
+    );
+};
 
-    )
-}
-
-export default Faqs
+export default Faqs;
