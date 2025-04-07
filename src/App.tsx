@@ -1,7 +1,6 @@
 import Header from '@components/sections/header';
 import Hero from '@components/sections/hero';
 import Partners from '@components/sections/partners';
-import RecentProjects from '@components/sections/recentProjects';
 import WorkingProcess from '@components/sections/workingProcess';
 import Services from '@components/sections/services';
 import Projects from '@components/sections/projects';
