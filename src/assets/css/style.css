@@ -30,13 +30,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Manrope:wght@200..800&display=swap');
 
 :root {
-    --main-color: #7722E7;
+    --main-color: #0052CC;
     --heading-color: #000000;
-    --primary-color: #8522E3;
+    --primary-color: #0052CC;
     --lighter-color: #1F1F1F;
     --subtitle-color: rgb(119, 119, 125);
     --black-color: #070707;
-    --border-color: #8522E3;
+    --border-color: #0052CC;
     --button-border: #9323de;
     --body-background: #FAF7F2;
     --white-color: #fff;
@@ -2796,7 +2796,6 @@ ul.extra-skills li i {
 .call-to-action-part p {
     font-size: 20px;
     color: var(--lighter-color);
-    padding: 0px 100px;
 }
 
 .call-to-action-part img {

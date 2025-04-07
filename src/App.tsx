@@ -1,5 +1,4 @@
 import Header from '@components/sections/header';
-import About from '@components/sections/about';
 import Hero from '@components/sections/hero';
 import Partners from '@components/sections/partners';
 import RecentProjects from '@components/sections/recentProjects';
@@ -24,7 +23,6 @@ const App = () => {
         <Hero />
         <RecentProjects />
         <Partners />
-        <About />
         <WorkingProcess />
         <Services />
         <Projects />

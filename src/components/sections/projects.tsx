@@ -25,9 +25,6 @@ const Projects = () => {
                         }
                     </div>
                 </PhotoProvider>
-                <div className="row">
-                    <div className="hero-btns text-center"><a href="#" className="theme-btn">View all works</a></div>
-                </div>
             </div>
         </div>
     )
