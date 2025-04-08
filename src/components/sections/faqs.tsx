@@ -4,12 +4,12 @@ import { faqData } from "@utils/fackData/faqData";
 const Faqs = () => {
 
     return (
-        <section id="faqs" className="any-questions-area section-padding">
+        <section id="qa" className="any-questions-area section-padding">
 			<div className="container">
 				<div className="row justify-content-center">
 					<div className="col-xl-12 col-lg-12 text-center">
 						<SectionTitle>
-							<SectionTitle.Name>FAQs</SectionTitle.Name>
+							<SectionTitle.Name>Q&A</SectionTitle.Name>
 							<SectionTitle.Title>Frequently Asked Questions</SectionTitle.Title>
 							<SectionTitle.Description>Unsure about subscription design?</SectionTitle.Description>
 						</SectionTitle>

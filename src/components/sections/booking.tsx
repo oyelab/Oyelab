@@ -13,14 +13,14 @@ const Booking = () => {
                                 </a>
                                 <h2>Let’s Build the Future Together</h2>
                                 <p>
-                                    Take the first step toward transforming your business. Book a free consultation call with our experts today by emailing us at <a href="mailto:nexadevbd@gmail.com">nexadevbd@gmail.com</a> and discover how we can bring your vision to life with precision, performance, and impact.
+                                    Take the first step toward transforming your business. Book a free consultation call with our experts today by emailing us at <a href="mailto:hello@nexadev.io">hello@nexadev.io</a> and discover how we can bring your vision to life with precision, performance, and impact.
                                 </p>
                                 <div className="contact-details mt-4">
                                     <div className="row">
                                         <div className="col-md-5 text-left">
                                             <p className="d-flex align-items-center">
                                                 <i className="ri-mail-line me-2"></i>
-                                                <a href="mailto:nexadevbd@gmail.com">nexadevbd@gmail.com</a>
+                                                <a href="mailto:hello@nexadev.io">hello@nexadev.io</a>
                                             </p>
                                             <p className="d-flex align-items-center">
                                                 <i className="ri-phone-line me-2"></i>

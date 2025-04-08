@@ -10,7 +10,7 @@ export const socialMediaData: DataType = [
 		id: 1,
 		title: 'Facebook',
 		icon: 'ri-facebook-fill',
-		url: 'https://www.facebook.com/nexadev.io',
+		url: 'https://www.facebook.com/nexadevofficial',
 	},
 	{
 		id: 2,
@@ -40,6 +40,6 @@ export const socialMediaData: DataType = [
 		id: 6,
 		title: 'GitHub',
 		icon: 'ri-github-fill',
-		url: 'https://www.github.com/nexadev.io',
+		url: 'https://www.github.com/nexadevio',
 	},
 ];

@@ -27,8 +27,8 @@ export const menuList:DataType = [
     // },
     {
         id:5,
-        label:"Faqs",
-        path:"faqs"
+        label:"Q&A",
+        path:"qa"
     },
     {
         id:6,
