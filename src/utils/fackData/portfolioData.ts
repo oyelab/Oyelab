@@ -1,18 +1,18 @@
 export const portfolioData = [
-	{
-		id: 1,
-		title: 'VioResume - Resume Builder',
-		img: '/images/projects/work1.jpeg',
-		category: 'Resume Builder',
-		url: 'https://s3.vioresume.com',
-	},
-	{
-		id: 2,
-		title: 'Digital Literacy Center',
-		img: '/images/projects/work2.jpeg',
-		category: 'LMS',
-		url: 'https://digitalliteracy.gov.bd',
-	},
+	// {
+	// 	id: 1,
+	// 	title: 'VioResume - Resume Builder',
+	// 	img: '/images/projects/work1.jpeg',
+	// 	category: 'Resume Builder',
+	// 	url: 'https://s3.vioresume.com',
+	// },
+	// {
+	// 	id: 2,
+	// 	title: 'Digital Literacy Center',
+	// 	img: '/images/projects/work2.jpeg',
+	// 	category: 'LMS',
+	// 	url: 'https://digitalliteracy.gov.bd',
+	// },
 	{
 		id: 3,
 		title: 'Wings Sportswear',
@@ -20,13 +20,13 @@ export const portfolioData = [
 		category: 'eCommerce',
 		url: 'https://wingssportswear.shop',
 	},
-	{
-		id: 4,
-		title: 'BASIS',
-		img: '/images/projects/work4.jpeg',
-		category: 'Membership',
-		url: 'https://beta.basis.org.bd',
-	},
+	// {
+	// 	id: 4,
+	// 	title: 'BASIS',
+	// 	img: '/images/projects/work4.jpeg',
+	// 	category: 'Membership',
+	// 	url: 'https://beta.basis.org.bd',
+	// },
 	{
 		id: 5,
 		title: 'Khelar Column',
